@@ -20,11 +20,9 @@ public class LocationRepository {
         entityManager.persist(locationEntity);
         transaction.commit();
     }
-
     public void showAllLocalization() {
-
         List<LocationEntity> resultList = entityManager.createQuery("FROM LocationEntity", LocationEntity.class).getResultList();
         System.out.println(resultList);
-
     }
+
 }
