@@ -41,6 +41,7 @@ private int id;
         return cityName;
     }
 
+
     public void setId(int id) {
         this.id = id;
     }
@@ -59,5 +60,16 @@ private int id;
 
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    @Override
+    public String toString() {
+        return "LocationEntity{" +
+                "id=" + id +
+                ", coordinates='" + coordinates + '\'' +
+                ", countryName='" + countryName + '\'' +
+                ", region='" + region + '\'' +
+                ", cityName='" + cityName + '\'' +
+                '}';
     }
 }
