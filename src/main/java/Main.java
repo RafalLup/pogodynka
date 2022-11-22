@@ -19,13 +19,16 @@ public class Main {
         //  repository.createNewLocation("44°21′N 10°50′E","Emilia-Romagna","Italian","Zocca");
         //  repository.showAllLocalization();
 
-        JsonReading jsonReading = new JsonReading();
-        jsonReading.cairnsAccuWeather();
-        jsonReading.londonAccuWeather();
-        jsonReading.zoccaAccuWeather();
-        jsonReading.cairnsOpenWeather();
-        jsonReading.londonOpenWeather();
-        jsonReading.zoccaOpenWeather();
+//        JsonReading jsonReading = new JsonReading();
+//        jsonReading.cairnsAccuWeather();
+//        jsonReading.londonAccuWeather();
+//        jsonReading.zoccaAccuWeather();
+//        jsonReading.cairnsOpenWeather();
+//        jsonReading.londonOpenWeather();
+//        jsonReading.zoccaOpenWeather();
+       AvgWeatherRepository avgWeatherRepository = new AvgWeatherRepository();
+       avgWeatherRepository.getAvgWeather(80);
+
 
     }
 }
