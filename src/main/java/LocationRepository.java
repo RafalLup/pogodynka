@@ -25,4 +25,8 @@ public class LocationRepository {
         System.out.println(resultList);
     }
 
+    public LocationEntity getById(int id) {
+       return entityManager.find(LocationEntity.class,id);
+
+    }
 }
