@@ -32,4 +32,7 @@ public class LocationRepository {
        return entityManager.find(LocationEntity.class,id);
 
     }
+    public LocationEntity getByCityName(String cityName){
+        return entityManager.find(LocationEntity.class,cityName);
+    }
 }

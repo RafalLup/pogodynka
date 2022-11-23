@@ -1,19 +1,8 @@
 package persistance;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 import persistance.repository.LocationRepository;
 
-import java.awt.*;
-import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -35,7 +24,7 @@ public class Main {
 //        avgWeatherRepository.createAvgWeatherRepository(80);
 //        avgWeatherRepository.createAvgWeatherRepository(81);
 //        avgWeatherRepository.createAvgWeatherRepository(82);
-        Menu.menu();
+        GUI.menu();
 
 
     }

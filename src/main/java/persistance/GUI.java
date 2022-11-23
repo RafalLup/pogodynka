@@ -5,7 +5,7 @@ import persistance.repository.LocationRepository;
 
 import java.util.Scanner;
 
-public class Menu {
+public class GUI {
 
 
     public static void menu() {
@@ -17,7 +17,8 @@ public class Menu {
             System.out.println("     ****************************************");
             System.out.println("1. DODAJ LOKALIZACJE");
             System.out.println("2. WYSWIETL WSZYSTKIE LOKALIZACJE");
-            System.out.println("3. POBIERZ WARTOSCI POGODOWE");
+            System.out.println("3. POBIERZ WARTOSCI POGODOWE PO ID LOKALIZACJI");
+            System.out.println("4. Pobierz WARTOSCI POGODOWE PO NAZWIE MIASTA");
             System.out.println("0. WYJSCIE Z APLIKACJI");
             userSelect = in.nextInt();
 
@@ -33,7 +34,7 @@ public class Menu {
                 System.out.println("podaj nazwe miasta");
                 String cityName = value.nextLine();
                 repository.createNewLocation(coordinates, region, countryName, cityName);
-            } else if (userSelect ==2) {
+            } else if (userSelect == 2) {
 
                 LocationRepository repository1 = new LocationRepository();
                 repository1.showAllLocalization();
@@ -42,9 +43,14 @@ public class Menu {
                 System.out.println("podaj id lokalizacji dla ktorej chcesz otrzymac warunki pogodowe");
                 int idLocation = in.nextInt();
                 LocationRepository repository = new LocationRepository();
-                avgWeatherRepository.createAvgWeatherRepository(repository.getById(idLocation));
-            } else if (userSelect == 4) {
-                break;
+                avgWeatherRepository.createAvgWeatherRepositoryByIdLocation(repository.getById(idLocation));
+//            } else if (userSelect == 4) {
+//                AvgWeatherRepository avgWeatherRepository = new AvgWeatherRepository();
+//                System.out.println("podaj nazwe lokalizacji dla ktorej chcesz otrzymac warunki pogodowe");
+//                String cityName = in.nextLine();
+//                LocationRepository repository = new LocationRepository();
+//                avgWeatherRepository.createAvgWeatherRepositoryByCityName(repository.getByCityName(cityName));
+//            }
             }
         }
     }
