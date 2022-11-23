@@ -1,3 +1,7 @@
+package persistance.repository.domain;
+
+import persistance.repository.domain.LocationEntity;
+
 import javax.persistence.*;
 
 @Entity
@@ -91,7 +95,7 @@ public class WeatherEntity {
 
     @Override
     public String toString() {
-        return "WeatherEntity{" +
+        return "persistance.repository.domain.WeatherEntity{" +
                 "id=" + id +
                 ", temperature=" + temperature +
                 ", pressure=" + pressure +

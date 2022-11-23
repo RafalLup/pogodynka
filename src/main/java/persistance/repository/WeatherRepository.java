@@ -1,3 +1,8 @@
+package persistance.repository;
+
+import persistance.repository.domain.LocationEntity;
+import persistance.repository.domain.WeatherEntity;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;

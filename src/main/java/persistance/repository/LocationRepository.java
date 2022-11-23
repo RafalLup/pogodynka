@@ -1,4 +1,7 @@
+package persistance.repository;
+
 import org.hibernate.Transaction;
+import persistance.repository.domain.LocationEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -21,7 +24,7 @@ public class LocationRepository {
         transaction.commit();
     }
     public void showAllLocalization() {
-        List<LocationEntity> resultList = entityManager.createQuery("FROM LocationEntity", LocationEntity.class).getResultList();
+        List<LocationEntity> resultList = entityManager.createQuery("FROM persistance.repository.domain.LocationEntity", LocationEntity.class).getResultList();
         System.out.println(resultList);
     }
 

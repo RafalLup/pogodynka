@@ -2,7 +2,9 @@ package persistance;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import persistance.repository.LocationRepository;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -28,7 +30,7 @@ public class Main {
 //        jsonReading.cairnsOpenWeather();
 //        jsonReading.londonOpenWeather();
 //        jsonReading.zoccaOpenWeather();
-//       AvgWeatherRepository avgWeatherRepository = new AvgWeatherRepository();
+//       persistance.repository.AvgWeatherRepository avgWeatherRepository = new persistance.repository.AvgWeatherRepository();
 //      // avgWeatherRepository.getAvgWeatherByIdLocation(80);
 //        avgWeatherRepository.createAvgWeatherRepository(80);
 //        avgWeatherRepository.createAvgWeatherRepository(81);

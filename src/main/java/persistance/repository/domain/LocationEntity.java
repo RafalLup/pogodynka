@@ -1,3 +1,5 @@
+package persistance.repository.domain;
+
 import javax.persistence.*;
 
 @Entity

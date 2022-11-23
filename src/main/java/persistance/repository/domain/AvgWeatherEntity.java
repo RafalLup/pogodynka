@@ -1,3 +1,5 @@
+package persistance.repository.domain;
+
 import javax.persistence.*;
 
 @Entity
@@ -81,7 +83,7 @@ public class AvgWeatherEntity {
 
     @Override
     public String toString() {
-        return "AvgWeatherEntity{" +
+        return "persistance.repository.domain.AvgWeatherEntity{" +
                 "id=" + id +
                 ", temperature=" + temperature +
                 ", pressure=" + pressure +

@@ -1,3 +1,8 @@
+package persistance;
+
+import persistance.repository.AvgWeatherRepository;
+import persistance.repository.LocationRepository;
+
 import java.util.Scanner;
 
 public class Menu {

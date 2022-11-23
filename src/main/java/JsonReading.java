@@ -1,4 +1,7 @@
 import org.json.JSONObject;
+import persistance.repository.LocationRepository;
+import persistance.repository.WeatherRepository;
+import persistance.repository.domain.LocationEntity;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
