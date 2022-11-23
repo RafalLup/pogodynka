@@ -26,8 +26,12 @@ public class Main {
 //        jsonReading.cairnsOpenWeather();
 //        jsonReading.londonOpenWeather();
 //        jsonReading.zoccaOpenWeather();
-       AvgWeatherRepository avgWeatherRepository = new AvgWeatherRepository();
-       avgWeatherRepository.getAvgWeather(80);
+//       AvgWeatherRepository avgWeatherRepository = new AvgWeatherRepository();
+//      // avgWeatherRepository.getAvgWeatherByIdLocation(80);
+//        avgWeatherRepository.createAvgWeatherRepository(80);
+//        avgWeatherRepository.createAvgWeatherRepository(81);
+//        avgWeatherRepository.createAvgWeatherRepository(82);
+        Menu.menu();
 
 
     }

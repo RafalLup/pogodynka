@@ -24,38 +24,40 @@ private int id;
         this.cityName = cityName;
     }
 
-
-    public String getCoordinates() {
-        return coordinates;
+    public int getId() {
+        return id;
     }
-
-    public String getCountryName() {
-        return countryName;
-    }
-
-    public String getRegion() {
-        return region;
-    }
-
-    public String getCityName() {
-        return cityName;
-    }
-
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getCoordinates() {
+        return coordinates;
     }
 
     public void setCoordinates(String coordinates) {
         this.coordinates = coordinates;
     }
 
+    public String getCountryName() {
+        return countryName;
+    }
+
     public void setCountryName(String countryName) {
         this.countryName = countryName;
     }
 
+    public String getRegion() {
+        return region;
+    }
+
     public void setRegion(String region) {
         this.region = region;
+    }
+
+    public String getCityName() {
+        return cityName;
     }
 
     public void setCityName(String cityName) {
@@ -64,12 +66,6 @@ private int id;
 
     @Override
     public String toString() {
-        return "LocationEntity{" +
-                "id=" + id +
-                ", coordinates='" + coordinates + '\'' +
-                ", countryName='" + countryName + '\'' +
-                ", region='" + region + '\'' +
-                ", cityName='" + cityName + '\'' +
-                '}';
+        return "\n"+"id: " + id +"\n"+ "coordinates: " + coordinates + "\n"+ "countryName: " +"\n"+ countryName +"\n"+ "region: " + region +"\n"+ "cityName: " + cityName+"\n"+"\n";
     }
 }
